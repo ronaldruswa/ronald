@@ -1,0 +1,120 @@
+html{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;
+}
+
+/*-------------------------------site structure-------------------------------*/
+
+.site-wrap{
+  width: 100vw;
+  height: 100vh;
+}
+
+.col-1{
+  width: 50%;
+}
+
+.col-2{
+  width: 100%;
+}
+
+/*--------------------------------flex box------------------------------------*/
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-sb{
+  justify-content: space-between;
+}
+
+/*--------------------------------left side-----------------------------------*/
+
+.site-wrap .left{
+  border-right: 2px solid #d3d3d3;
+  background: url('../lib/img/ronald-ruswa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/*--------------------------------right side----------------------------------*/
+
+.site-wrap .right{
+  background: #ffffff;
+  text-align: justify;
+  color: #2c3e50;
+}
+
+.site-wrap .right .inner{
+  padding: 30px 30px;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+}
+
+.bar{
+  width: 120px;
+  height: 5px;
+  margin: 20px 0;
+  background: #2980b9;
+  border-radius: 2.5px;
+}
+
+.site-wrap .right .inner .bottom .social-icons{
+  position: relative;
+  top: 8px;
+  bottom: 0;
+}
+
+.site-wrap .right .inner .bottom .social-icons img{
+  height: 32px;
+  margin-right: 7px;
+  width: auto;
+}
+
+.site-wrap .right .inner .bottom .social-icons img:hover{
+  height: 38px;
+}
+
+.site-wrap .right .inner .bottom .cv-ronald-ruswa img{
+  height: 42px;
+  width: auto;
+}
+
+/*-------------------------------color pallete-------------------------------*/
+
+.light-grey{
+  color: #bdc3c7;
+}
+
+/*-------------------------------media queries-------------------------------*/
+
+@media (max-width: 680px) {
+  .left{
+    display: none;
+  }
+
+  .site-wrap .right .inner{
+    padding: 15px 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+  }
+
+  .col-1{
+    width: 100%;
+  }
+}
